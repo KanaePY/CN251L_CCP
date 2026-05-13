@@ -114,13 +114,13 @@ CN251L_CCP/
 ## ✅ Deliverables Checklist
 
 ### Week 1
-- [c] Team charter signed (PDF)
-- [c] Logical topology diagram (draw.io / PDF)
-- [c] IP addressing plan (.xlsx or .csv)
-- [c] GitHub repository link
-- [c] Resource acquisition report (screenshots)
-- [c] Risk assessment matrix (PDF)
-- [c] Week 1 status report (Markdown / PDF)
+- [x] Team charter signed (PDF)
+- [x] Logical topology diagram (draw.io / PDF)
+- [x] IP addressing plan (.xlsx or .csv)
+- [x] GitHub repository link
+- [x] Resource acquisition report (screenshots)
+- [x] Risk assessment matrix (PDF)
+- [x] Week 1 status report (Markdown / PDF)
 
 ### Week 2
 - [ ] GNS3 project file (`.gns3` + image folder zipped)
