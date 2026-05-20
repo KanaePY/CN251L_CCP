@@ -1,10 +1,10 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="6UrtdZN3J9olL9eEsEfZ">
-    <mxGraphModel dx="1202" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="808" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="skaF3HClCoGADpPy9osM-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="internet" vertex="1">
+        <mxCell id="skaF3HClCoGADpPy9osM-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="internet&lt;div&gt;Loopback0: 8.8.4.4&lt;/div&gt;&lt;div&gt;f0/0: 10.0.0.1&lt;/div&gt;&lt;div&gt;f0/1: 10.0.0.5&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="200" y="80" as="geometry" />
         </mxCell>
         <mxCell id="73LokpMjuXUgy_Cdvbjd-1" edge="1" parent="1" source="skaF3HClCoGADpPy9osM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
@@ -12,16 +12,16 @@
             <mxPoint x="449.8571428571429" y="280.1428571428571" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="skaF3HClCoGADpPy9osM-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;ISP1-Router&lt;div&gt;Gig 0/0: 198.51.100.1/30&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="skaF3HClCoGADpPy9osM-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;ISP1-Router&lt;div&gt;f0/0: 198.51.100.1/30&lt;/div&gt;&lt;div&gt;f0/1: 10.0.0.6/30&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="390" y="220" as="geometry" />
         </mxCell>
         <mxCell id="skaF3HClCoGADpPy9osM-13" edge="1" parent="1" source="skaF3HClCoGADpPy9osM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="skaF3HClCoGADpPy9osM-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="skaF3HClCoGADpPy9osM-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Branch-Router&lt;div&gt;&lt;/div&gt;&lt;div&gt;Gig0/0: 198.51.100.2/30 (Fiber)&lt;/div&gt;&lt;div&gt;Gig0/1: 198.51.100.2/30 (LTE)&lt;/div&gt;&lt;div&gt;Gig0/2: 192.168.10.1/24 (LAN gateway)&lt;/div&gt;" vertex="1">
+        <mxCell id="skaF3HClCoGADpPy9osM-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Branch-Router&lt;div&gt;&lt;/div&gt;&lt;div&gt;F0/0: 203.0.113.2/30 (Fiber)&lt;/div&gt;&lt;div&gt;F0/1: 198.51.100.2/30 (LTE)&lt;/div&gt;&lt;div&gt;F1/0: 192.168.10.1/24 (LAN gateway)&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="220" x="170" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="skaF3HClCoGADpPy9osM-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ISP1-Router&lt;div&gt;Gig 0/0: 103.0.113.1/30&lt;/div&gt;" vertex="1">
+        <mxCell id="skaF3HClCoGADpPy9osM-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ISP1-Router&lt;div&gt;f0/0: 203.0.113.1/30&lt;/div&gt;&lt;div&gt;f0/1: 10.0.0.2/30&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="10" y="220" as="geometry" />
         </mxCell>
         <mxCell id="skaF3HClCoGADpPy9osM-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="VPCs&lt;div&gt;IP: 192.168.10.10&lt;/div&gt;&lt;div&gt;GW: 192.168.10.1&lt;/div&gt;" vertex="1">
@@ -30,7 +30,7 @@
         <mxCell id="skaF3HClCoGADpPy9osM-15" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="List" vertex="1">
           <mxGeometry height="90" width="140" x="460" y="420" as="geometry" />
         </mxCell>
-        <mxCell id="skaF3HClCoGADpPy9osM-16" parent="skaF3HClCoGADpPy9osM-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-family: Arial; font-size: 10px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;3 × Cisco c3745 IOS 12.4&lt;/span&gt;" vertex="1">
+        <mxCell id="skaF3HClCoGADpPy9osM-16" parent="skaF3HClCoGADpPy9osM-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-family: Arial; font-size: 10px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;4 × Cisco c3745 IOS 12.4&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="140" y="30" as="geometry" />
         </mxCell>
         <mxCell id="skaF3HClCoGADpPy9osM-17" parent="skaF3HClCoGADpPy9osM-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-family: Arial; font-size: 10px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;1 × VPCS (Client PC&lt;/span&gt;" vertex="1">

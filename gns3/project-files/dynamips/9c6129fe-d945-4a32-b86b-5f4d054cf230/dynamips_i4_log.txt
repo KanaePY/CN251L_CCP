@@ -1,0 +1,73 @@
+May 19 22:43:07.854 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 19 22:43:07.857 HYPERVISOR: Started on IP = localhost, TCP port = 62060.
+May 19 22:43:08.313 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 22:43:08.314 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\maste\GNS3\projects\untitled\project-files\dynamips 
+May 19 22:43:08.314 GENERAL: working_dir=C:\Users\maste\GNS3\projects\untitled\project-files\dynamips
+May 19 22:43:08.315 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\08789792-7aec-4f7a-8895-7f443ff6d9cd 
+May 19 22:43:08.326 GENERAL: working_dir=C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\08789792-7aec-4f7a-8895-7f443ff6d9cd
+May 19 22:43:08.326 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+May 19 22:43:08.330 VM: VM R2 created.
+May 19 22:43:08.331 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+May 19 22:43:08.331 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+May 19 22:43:08.332 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:43:08.333 HYPERVISOR: exec_cmd: vm get_status R2 
+May 19 22:43:08.334 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6026be14 
+May 19 22:43:08.334 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+May 19 22:43:08.335 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 19 22:43:08.335 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 19 22:43:08.398 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:43:22.637 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:43:45.456 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:43:45.457 HYPERVISOR: exec_cmd: vm rename R2 ISP1-Router 
+May 19 22:43:45.549 HYPERVISOR: exec_cmd: vm set_ios ISP1-Router C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:44:50.341 HYPERVISOR: exec_cmd: nio create_udp udp-828643f9-c1f5-46a9-b8d9-8dd5150db25f 10002 127.0.0.1 10003 
+May 19 22:44:50.652 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1-Router 0 0 udp-828643f9-c1f5-46a9-b8d9-8dd5150db25f 
+May 19 22:44:50.654 HYPERVISOR: exec_cmd: vm get_status ISP1-Router 
+May 19 22:52:47.417 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 19 22:52:47.419 VM: VM Ghost created.
+May 19 22:52:47.518 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:52:47.519 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 19 22:52:47.520 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+May 19 22:52:47.520 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 19 22:52:47.557 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 19 22:52:47.557 HYPERVISOR: exec_cmd: vm start Ghost 
+May 19 22:52:48.126 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 19 22:52:48.137 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 19 22:52:48.271 VM: VM Ghost shutdown.
+May 19 22:52:48.272 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 19 22:52:48.274 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 19 22:52:48.274 VM: VM Ghost destroyed.
+May 19 22:52:48.297 HYPERVISOR: exec_cmd: vm set_ghost_status ISP1-Router 2 
+May 19 22:52:48.297 HYPERVISOR: exec_cmd: vm set_ghost_file ISP1-Router C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+May 19 22:52:48.298 HYPERVISOR: exec_cmd: vm get_status ISP1-Router 
+May 19 22:52:48.305 HYPERVISOR: exec_cmd: vm set_config ISP1-Router configs\i2_startup-config.cfg 
+May 19 22:52:48.306 HYPERVISOR: exec_cmd: vm start ISP1-Router 
+May 19 22:53:18.765 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 19 22:53:18.865 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 19 23:33:50.007 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 19 23:33:50.078 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 20 01:31:43.865 HYPERVISOR: exec_cmd: vm get_status ISP1-Router 
+May 20 01:31:43.866 HYPERVISOR: exec_cmd: vm stop ISP1-Router 
+May 20 01:31:43.997 VM: VM ISP1-Router shutdown.
+May 20 01:31:43.998 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 20 01:31:48.254 HYPERVISOR: exec_cmd: vm set_ghost_status ISP1-Router 2 
+May 20 01:31:48.254 HYPERVISOR: exec_cmd: vm set_ghost_file ISP1-Router C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+May 20 01:31:48.256 HYPERVISOR: exec_cmd: vm get_status ISP1-Router 
+May 20 01:31:48.268 HYPERVISOR: exec_cmd: vm set_config ISP1-Router configs\i2_startup-config.cfg 
+May 20 01:31:48.268 HYPERVISOR: exec_cmd: vm start ISP1-Router 
+May 20 01:32:18.708 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 20 01:32:18.760 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 20 14:08:04.281 HYPERVISOR: exec_cmd: vm get_status ISP1-Router 
+May 20 14:08:04.298 HYPERVISOR: exec_cmd: vm stop ISP1-Router 
+May 20 14:08:04.506 VM: VM ISP1-Router shutdown.
+May 20 14:08:04.508 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 20 14:08:16.818 HYPERVISOR: exec_cmd: vm get_status ISP1-Router 
+May 20 14:08:16.821 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP1-Router 0 0 
+May 20 14:08:16.829 HYPERVISOR: exec_cmd: nio delete udp-828643f9-c1f5-46a9-b8d9-8dd5150db25f 
+May 20 14:08:17.580 HYPERVISOR: exec_cmd: vm get_status ISP1-Router 
+May 20 14:08:17.583 HYPERVISOR: exec_cmd: vm extract_config ISP1-Router 
+May 20 14:08:17.590 HYPERVISOR: exec_cmd: vm delete ISP1-Router 
+May 20 14:08:17.591 VM: VM ISP1-Router destroyed.
+May 20 14:08:17.596 HYPERVISOR: exec_cmd: hypervisor stop 
+May 20 14:08:17.937 HYPERVISOR: Stopped.
+May 20 14:08:17.938 GENERAL: reset done.

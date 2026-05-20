@@ -1,0 +1,84 @@
+May 19 22:23:42.275 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 19 22:23:42.277 HYPERVISOR: Started on IP = localhost, TCP port = 61721.
+May 19 22:23:42.323 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 22:23:42.324 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\maste\GNS3\projects\untitled\project-files\dynamips 
+May 19 22:23:42.329 GENERAL: working_dir=C:\Users\maste\GNS3\projects\untitled\project-files\dynamips
+May 19 22:23:42.329 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\ce112746-e14d-41c9-b80a-6a05d88119dc 
+May 19 22:23:42.330 GENERAL: working_dir=C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\ce112746-e14d-41c9-b80a-6a05d88119dc
+May 19 22:23:42.330 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+May 19 22:23:42.336 VM: VM R1 created.
+May 19 22:23:42.337 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 19 22:23:42.338 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+May 19 22:23:42.338 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:23:42.339 HYPERVISOR: exec_cmd: vm get_status R1 
+May 19 22:23:42.339 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6026be14 
+May 19 22:23:42.340 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 19 22:23:42.340 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 19 22:23:42.341 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 19 22:23:42.424 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:25:27.523 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:25:30.655 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:25:42.991 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:26:08.521 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:26:10.521 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:26:11.526 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:27:13.202 HYPERVISOR: exec_cmd: nio create_udp udp-9a2e2e5b-18bc-4e28-834c-b01d4acf648a 10002 127.0.0.1 10003 
+May 19 22:27:14.111 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-9a2e2e5b-18bc-4e28-834c-b01d4acf648a 
+May 19 22:27:14.112 HYPERVISOR: exec_cmd: vm get_status R1 
+May 19 22:27:57.810 HYPERVISOR: exec_cmd: vm get_status R1 
+May 19 22:27:57.811 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+May 19 22:27:57.815 HYPERVISOR: exec_cmd: nio delete udp-9a2e2e5b-18bc-4e28-834c-b01d4acf648a 
+May 19 22:43:21.422 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:44:01.969 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:44:01.969 HYPERVISOR: exec_cmd: vm rename R1 Branch-Router 
+May 19 22:44:02.040 HYPERVISOR: exec_cmd: vm set_ios Branch-Router C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 19 22:44:50.673 HYPERVISOR: exec_cmd: nio create_udp udp-1a5f2597-b162-4984-b214-b6b3a69869fa 10004 127.0.0.1 10005 
+May 19 22:44:50.687 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch-Router 0 0 udp-1a5f2597-b162-4984-b214-b6b3a69869fa 
+May 19 22:44:50.687 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 19 22:44:59.777 HYPERVISOR: exec_cmd: nio create_udp udp-1b77d2d0-7d0b-4f02-bd4f-00c9cc9adb2b 10010 127.0.0.1 10011 
+May 19 22:44:59.782 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch-Router 0 1 udp-1b77d2d0-7d0b-4f02-bd4f-00c9cc9adb2b 
+May 19 22:44:59.782 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 19 22:47:18.269 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 19 22:47:18.270 HYPERVISOR: exec_cmd: vm slot_add_binding Branch-Router 1 0 NM-1FE-TX 
+May 19 22:47:37.359 HYPERVISOR: exec_cmd: nio create_udp udp-1404abf7-deef-4b59-8f13-9db88f88aadd 10014 127.0.0.1 10015 
+May 19 22:47:37.361 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch-Router 1 0 udp-1404abf7-deef-4b59-8f13-9db88f88aadd 
+May 19 22:47:37.362 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 19 22:52:48.299 HYPERVISOR: exec_cmd: vm set_ghost_status Branch-Router 2 
+May 19 22:52:48.306 HYPERVISOR: exec_cmd: vm set_ghost_file Branch-Router C:\Users\maste\GNS3\projects\untitled\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+May 19 22:52:48.306 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 19 22:52:48.314 HYPERVISOR: exec_cmd: vm set_config Branch-Router configs\i1_startup-config.cfg 
+May 19 22:52:48.314 HYPERVISOR: exec_cmd: vm start Branch-Router 
+May 19 22:53:18.766 HYPERVISOR: exec_cmd: vm extract_config Branch-Router 
+May 19 22:53:18.784 HYPERVISOR: exec_cmd: vm extract_config Branch-Router 
+May 19 23:48:20.513 HYPERVISOR: exec_cmd: vm extract_config Branch-Router 
+May 19 23:48:20.535 HYPERVISOR: exec_cmd: vm extract_config Branch-Router 
+May 20 00:40:14.554 HYPERVISOR: exec_cmd: vm set_ios Branch-Router C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 20 00:40:19.291 HYPERVISOR: exec_cmd: vm set_ios Branch-Router C:/Users/maste/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 20 01:33:49.481 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 20 01:33:49.482 HYPERVISOR: exec_cmd: vm slot_disable_nio Branch-Router 0 1 
+May 20 01:33:49.483 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Branch-Router 0 1 
+May 20 01:33:49.485 HYPERVISOR: exec_cmd: nio delete udp-1b77d2d0-7d0b-4f02-bd4f-00c9cc9adb2b 
+May 20 01:34:29.437 HYPERVISOR: exec_cmd: nio create_udp udp-5bf47b93-b44c-41af-b51d-955486f08927 10010 127.0.0.1 10011 
+May 20 01:34:29.441 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch-Router 0 1 udp-5bf47b93-b44c-41af-b51d-955486f08927 
+May 20 01:34:29.441 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 20 01:34:29.441 HYPERVISOR: exec_cmd: vm slot_enable_nio Branch-Router 0 1 
+May 20 14:08:04.283 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 20 14:08:04.301 HYPERVISOR: exec_cmd: vm stop Branch-Router 
+May 20 14:08:04.588 VM: VM Branch-Router shutdown.
+May 20 14:08:04.590 HYPERVISOR: exec_cmd: vm extract_config Branch-Router 
+May 20 14:08:16.573 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 20 14:08:16.578 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Branch-Router 1 0 
+May 20 14:08:16.602 HYPERVISOR: exec_cmd: nio delete udp-1404abf7-deef-4b59-8f13-9db88f88aadd 
+May 20 14:08:16.927 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 20 14:08:16.928 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Branch-Router 0 0 
+May 20 14:08:16.930 HYPERVISOR: exec_cmd: nio delete udp-1a5f2597-b162-4984-b214-b6b3a69869fa 
+May 20 14:08:17.032 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 20 14:08:17.032 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Branch-Router 0 1 
+May 20 14:08:17.034 HYPERVISOR: exec_cmd: nio delete udp-5bf47b93-b44c-41af-b51d-955486f08927 
+May 20 14:08:17.532 HYPERVISOR: exec_cmd: vm get_status Branch-Router 
+May 20 14:08:17.533 HYPERVISOR: exec_cmd: vm extract_config Branch-Router 
+May 20 14:08:17.536 HYPERVISOR: exec_cmd: vm delete Branch-Router 
+May 20 14:08:17.536 VM: VM Branch-Router destroyed.
+May 20 14:08:17.539 HYPERVISOR: exec_cmd: hypervisor stop 
+May 20 14:08:17.845 HYPERVISOR: Stopped.
+May 20 14:08:17.881 GENERAL: reset done.
