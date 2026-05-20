@@ -1,0 +1,20 @@
+# =============================================================
+# CCP-CNS2026 | Problem 5: Retail Network Failover
+# Device:   Client-PC (VPCS)
+# Role:     Customer PC — RetailNow Store LAN
+# Date:     May 21, 2026
+# Team:     RetailNow-Team-05
+# =============================================================
+
+# VPCS Configuration Command:
+ip 192.168.10.10 255.255.255.0 192.168.10.1
+
+# This sets:
+#   IP Address : 192.168.10.10
+#   Subnet Mask: 255.255.255.0
+#   Gateway    : 192.168.10.1 (Branch-Router f1/0)
+
+# Verification Commands:
+# show ip        -> confirm IP, mask, gateway
+# ping 8.8.8.8   -> test Internet reachability
+# trace 8.8.8.8  -> trace route to Internet

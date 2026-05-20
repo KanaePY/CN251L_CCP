@@ -1,0 +1,70 @@
+! =============================================================
+! CCP-CNS2026 | Problem 5: Retail Network Failover
+! Device:   Branch-Router
+! Role:     RetailNow Store Router (Dual WAN + LAN)
+! Version:  Cisco IOS 12.4 (c3725)
+! Date:     May 21, 2026
+! Team:     RetailNow-Team-05
+! =============================================================
+
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Branch-Router
+!
+boot-start-marker
+boot-end-marker
+!
+no aaa new-model
+!
+ip cef
+!
+! ---- Interfaces ----
+!
+interface FastEthernet0/0
+ description WAN1-Fiber-Primary-to-ISP1
+ ip address 203.0.113.2 255.255.255.252
+ duplex auto
+ speed auto
+ no shutdown
+!
+interface FastEthernet0/1
+ description WAN2-LTE-Backup-to-ISP2
+ ip address 198.51.100.2 255.255.255.252
+ duplex auto
+ speed auto
+ no shutdown
+!
+interface FastEthernet1/0
+ description LAN-Gateway-to-Clients
+ ip address 192.168.10.1 255.255.255.0
+ duplex auto
+ speed auto
+ no shutdown
+!
+! ---- Static Routes ----
+!
+! Primary default route via Fiber — only active when Track 1 is UP
+ip route 0.0.0.0 0.0.0.0 203.0.113.1 track 1
+!
+! Floating static route via LTE — AD=10, activates when Track 1 goes DOWN
+ip route 0.0.0.0 0.0.0.0 198.51.100.1 10
+!
+! ---- IP SLA Configuration ----
+! Probes 8.8.8.8 via Fiber interface every 5 seconds
+! If probe fails -> Track 1 goes DOWN -> primary route removed
+! -> floating route activates -> traffic switches to LTE
+!
+ip sla 1
+ icmp-echo 8.8.8.8 source-ip 203.0.113.2
+ frequency 5
+ip sla schedule 1 life forever start-time now
+!
+! ---- Object Tracking ----
+! NOTE: c3725 IOS 12.4 uses 'rtr' syntax instead of 'ip sla'
+!
+track 1 rtr 1 reachability
+!
+end

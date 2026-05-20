@@ -1,0 +1,57 @@
+! =============================================================
+! CCP-CNS2026 | Problem 5: Retail Network Failover
+! Device:   Internet-Router
+! Role:     Simulated Internet Core
+! Version:  Cisco IOS 12.4 (c3725)
+! Date:     May 21, 2026
+! Team:     RetailNow-Team-05
+! =============================================================
+
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Internet-Router
+!
+boot-start-marker
+boot-end-marker
+!
+no aaa new-model
+!
+ip cef
+!
+! ---- Interfaces ----
+!
+interface FastEthernet0/0
+ description Link-to-ISP1-Router
+ ip address 10.0.0.1 255.255.255.252
+ duplex auto
+ speed auto
+ no shutdown
+!
+interface FastEthernet0/1
+ description Link-to-ISP2-Router
+ ip address 10.0.0.5 255.255.255.252
+ duplex auto
+ speed auto
+ no shutdown
+!
+interface Loopback0
+ description Simulated-Internet-IP
+ ip address 8.8.8.8 255.255.255.255
+ no shutdown
+!
+! ---- Static Routes ----
+! Return routes so replies reach Branch-Router subnets
+!
+ip route 203.0.113.0 255.255.255.252 10.0.0.2
+ip route 198.51.100.0 255.255.255.252 10.0.0.6
+ip route 192.168.10.0 255.255.255.0 10.0.0.6
+!
+! NOTE: 192.168.10.0 reply forced via ISP2 (10.0.0.6)
+! This ensures replies reach Client-PC during failover
+! via LTE path. Asymmetric routing is acceptable for
+! this simulation.
+!
+end

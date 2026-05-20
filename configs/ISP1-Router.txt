@@ -1,0 +1,46 @@
+! =============================================================
+! CCP-CNS2026 | Problem 5: Retail Network Failover
+! Device:   ISP1-Router
+! Role:     Fiber ISP (Primary WAN)
+! Version:  Cisco IOS 12.4 (c3725)
+! Date:     May 21, 2026
+! Team:     RetailNow-Team-05
+! =============================================================
+
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname ISP1-Router
+!
+boot-start-marker
+boot-end-marker
+!
+no aaa new-model
+!
+ip cef
+!
+! ---- Interfaces ----
+!
+interface FastEthernet0/0
+ description Link-to-Branch-Router-Fiber
+ ip address 203.0.113.1 255.255.255.252
+ duplex auto
+ speed auto
+ no shutdown
+!
+interface FastEthernet0/1
+ description Link-to-Internet-Router
+ ip address 10.0.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ no shutdown
+!
+! ---- Static Routes ----
+!
+ip route 0.0.0.0 0.0.0.0 10.0.0.1
+ip route 192.168.10.0 255.255.255.0 203.0.113.2
+ip route 8.8.8.8 255.255.255.255 10.0.0.1
+!
+end

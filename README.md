@@ -69,11 +69,18 @@ Built in **GNS3**.
 CN251L_CCP/
 ├── README.md
 ├── configs/           # Router running-configs (populated Week 2+)
+|   └──Brach_router.txt
+|   └──CLient_PC.txt
+|   └──Internet-Router.txt
+|   └──ISP1.txt
+|   └──ISP2.txt
+|   └──Readme.md
 ├── diagrams/          # Topology diagrams (draw.io + PDF)
 │   └── topology_v1.pdf
 ├── docs/              # Reports and deliverables
 │   ├── status_reports/
 │   │   └── week1_status_report.md 
+|   |   └── week2_status_report.md 
 │   ├── team_charter.pdf
 │   ├── ip_addressing_plan.xlsx
 │   └── risk_assessment.pdf
@@ -102,7 +109,7 @@ CN251L_CCP/
 | Week | Focus | Status |
 |---|---|---|
 | Week 1 | Requirements analysis, topology design, IP addressing plan | ✅ Complete |
-| Week 2 | GNS3 implementation, basic connectivity, running configs | ⬜ Not Started |
+| Week 2 | GNS3 implementation, basic connectivity, running configs | ✅ Complete |
 | Week 3 | Security implementation, L2 configs, ACLs | ⬜ Not Started |
 | Week 4 | NAT (if applicable), performance baseline, final integration | ⬜ Not Started |
 | Week 5 | Final report, video demo, presentation | ⬜ Not Started |
@@ -123,11 +130,10 @@ CN251L_CCP/
 - [x] Week 1 status report (Markdown / PDF)
 
 ### Week 2
-- [ ] GNS3 project file (`.gns3` + image folder zipped)
-- [ ] Running-configs of all devices (`.txt` in `configs/`)
-- [ ] Ping test results (all-to-all matrix)
-- [ ] SSH login proof (from Kali)
-- [ ] Week 2 status report
+- [x] GNS3 project file (`.gns3` + image folder zipped)
+- [x] Running-configs of all devices (`.txt` in `configs/`)
+- [x] Ping test results (all-to-all matrix)
+- [x] Week 2 status report
 
 ### Week 3
 - [ ] L2 security configs + verification screenshots
